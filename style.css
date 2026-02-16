@@ -4,6 +4,10 @@ padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
+.logo img{
+height:50px;
+object-fit:contain;
+}
 
 body{
 line-height:1.6;
@@ -193,3 +197,4 @@ transform:translateY(0);
 .hero h1{font-size:1.8rem;}
 .counters{flex-direction:column;}
 }
+
