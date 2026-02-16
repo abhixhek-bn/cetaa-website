@@ -53,3 +53,13 @@ donateBtn.addEventListener("click",()=>{
 function closeModal(){
 document.getElementById("thankModal").style.display="none";
 }
+/* Hero fade-in */
+window.addEventListener("load", ()=>{
+  document.querySelectorAll(".fade").forEach((el,i)=>{
+    setTimeout(()=>{
+      el.style.opacity="1";
+      el.style.transform="translateY(0)";
+    }, i*300);
+  });
+});
+
