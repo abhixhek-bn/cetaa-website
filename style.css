@@ -1,0 +1,195 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+background:white;
+position:sticky;
+top:0;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.navbar ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+a{text-decoration:none;color:#004a99;}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:#f5f8fc;
+}
+
+.hero h1{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+.btn-primary{
+background:#004a99;
+color:white;
+padding:12px 22px;
+border-radius:6px;
+transition:.3s;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:2px solid #004a99;
+padding:12px 22px;
+border-radius:6px;
+}
+
+.section{
+padding:70px 10%;
+text-align:center;
+}
+
+.alt{background:#f7f7f7;}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+padding:25px;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+border-radius:10px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.counters{
+display:flex;
+justify-content:center;
+gap:60px;
+padding:60px;
+background:#004a99;
+color:white;
+}
+
+.gallery{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin:20px 0;
+}
+
+.gallery img{
+width:350px;
+border-radius:8px;
+}
+
+.cost-table{
+margin:auto;
+border-collapse:collapse;
+width:80%;
+}
+
+.cost-table td{
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+.total{
+font-weight:bold;
+background:#eaf2ff;
+}
+
+.progress-container{
+width:80%;
+background:#ddd;
+margin:auto;
+border-radius:20px;
+overflow:hidden;
+}
+
+.progress-bar{
+width:0;
+padding:10px;
+background:#004a99;
+color:white;
+text-align:center;
+}
+
+.donation input{
+display:block;
+margin:10px auto;
+padding:12px;
+width:300px;
+}
+
+.preset button{
+margin:5px;
+padding:10px 15px;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.5);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+padding:30px;
+border-radius:10px;
+animation:fadeIn .4s;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:scale(.8);}
+to{opacity:1;}
+}
+
+/* Reveal animation */
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px){
+.hero h1{font-size:1.8rem;}
+.counters{flex-direction:column;}
+}
